@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="40dp"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
             android:textColor="#87C4CB"
@@ -47,25 +47,31 @@
             android:id="@+id/edAlcool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="Preço da gasolina"
+            android:gravity="center"
+            android:hint="@string/pre_o_do_lcool"
             android:inputType="numberDecimal" />
 
         <EditText
             android:id="@+id/edGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:ems="10"
-            android:hint="alcool"
+            android:layout_marginHorizontal="30dp"
+            android:gravity="center"
+            android:hint="@string/pre_o_da_gasolina"
             android:inputType="numberDecimal" />
 
         <Switch
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="center"
             android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
             android:text="75%" />
 
         <Button
@@ -77,6 +83,17 @@
             android:backgroundTint="#CB584C"
             android:text="Calcular"
             android:onClick="onClickBtCalcular"/>
+
+        <TextView
+            android:id="@+id/textResultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

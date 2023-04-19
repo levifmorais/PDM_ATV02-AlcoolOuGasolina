@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Com qual combustível?</string>
+    <string name="app_name">Gasolina ou Álcool?</string>
+    <string name="pre_o_do_lcool">Preço do Álcool</string>
+    <string name="pre_o_da_gasolina">Preço da Gasolina</string>
 </resources>
