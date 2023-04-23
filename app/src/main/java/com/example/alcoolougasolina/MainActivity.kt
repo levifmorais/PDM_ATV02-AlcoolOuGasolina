@@ -26,13 +26,14 @@ class MainActivity : AppCompatActivity() {
             val txtResultado: TextView = findViewById(R.id.textResultado)
             val edAlcool= findViewById<EditText>(R.id.edAlcool).text.toString().toDoubleOrNull()
             val edGas= findViewById<EditText>(R.id.edGasolina).text.toString().toDoubleOrNull()
-
+            var debugg = 0.0
             if (edAlcool != null && edGas != null) {
+                debugg = edGas * percentual
                 if (edAlcool <= edGas * percentual) {
-                    txtResultado.text = "Álcool"
+                    txtResultado.text = "ÁLCOOL"
                 }
                 else {
-                    txtResultado.text = "Gasolina"
+                    txtResultado.text = "GASOLINA"
                 }
             }
             else {

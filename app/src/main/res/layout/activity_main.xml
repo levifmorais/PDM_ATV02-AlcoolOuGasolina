@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87C4CB"
-    android:backgroundTint="#87C4CB"
+    android:background="?android:attr/colorBackground"
+    android:backgroundTint="?android:attr/colorBackground"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -39,9 +39,41 @@
             android:layout_marginBottom="40dp"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
-            android:textColor="#87C4CB"
+            android:textColor="?android:attr/textColorLink"
             android:textSize="25sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/LabelGas"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Preço da Gasolina"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edGasolina"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="Exemplo: 7.30"
+            android:inputType="numberDecimal"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="16sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/LabelAlcool"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Preço do Álcool"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/edAlcool"
@@ -50,20 +82,11 @@
             android:layout_gravity="start"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:gravity="center"
-            android:hint="@string/pre_o_do_lcool"
-            android:inputType="numberDecimal" />
-
-        <EditText
-            android:id="@+id/edGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="start"
-            android:ems="10"
-            android:layout_marginHorizontal="30dp"
-            android:gravity="center"
-            android:hint="@string/pre_o_da_gasolina"
-            android:inputType="numberDecimal" />
+            android:hint="Exemplo: 5.50"
+            android:inputType="numberDecimal"
+            android:textColor="?android:attr/textColorPrimaryNoDisable"
+            android:textSize="16sp"
+            android:textStyle="italic" />
 
         <Switch
             android:id="@+id/swPercentual"
@@ -80,20 +103,19 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
-            android:backgroundTint="#CB584C"
-            android:text="Calcular"
-            android:onClick="onClickBtCalcular"/>
+            android:backgroundTint="?attr/colorSecondary"
+            android:onClick="onClickBtCalcular"
+            android:text="Calcular" />
 
         <TextView
             android:id="@+id/textResultado"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text=""
+            android:text="RESULTADO"
             android:textAlignment="center"
             android:textSize="25sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
