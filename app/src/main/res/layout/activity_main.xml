@@ -9,8 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_width="302dp"
+        android:layout_height="618dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:contentDescription="uma bomba de gasolina ilustrando o app"
+            android:contentDescription="uma bomba de gasolina ilustrando o aplicativo"
             android:paddingVertical="10dp"
             android:textAlignment="center"
             app:srcCompat="@mipmap/ic_launcher_foreground" />
@@ -37,6 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="40dp"
+            android:contentDescription="Título da aplicação Gasolina ou Álcool"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
             android:textColor="?android:attr/textColorLink"
@@ -45,9 +46,10 @@
 
         <TextView
             android:id="@+id/LabelGas"
-            android:layout_width="237dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="left"
+            android:layout_marginStart="30dp"
             android:text="Preço da Gasolina"
             android:textColor="?android:attr/textColorPrimaryNoDisable"
             android:textSize="20sp" />
@@ -59,18 +61,22 @@
             android:layout_gravity="start"
             android:layout_marginHorizontal="30dp"
             android:layout_marginBottom="16dp"
+            android:autofillHints=""
             android:ems="10"
-            android:hint="Exemplo: 7.30"
+            android:hint="@string/exemplo_7_30"
             android:inputType="numberDecimal"
+            android:paddingBottom="16dp"
             android:textColor="?android:attr/textColorPrimaryNoDisable"
-            android:textSize="16sp"
+            android:textColorHint="#5D5F61"
+            android:textSize="18sp"
             android:textStyle="italic" />
 
         <TextView
             android:id="@+id/LabelAlcool"
-            android:layout_width="237dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
             android:text="Preço do Álcool"
             android:textColor="?android:attr/textColorPrimaryNoDisable"
             android:textSize="20sp" />
@@ -84,8 +90,10 @@
             android:ems="10"
             android:hint="Exemplo: 5.50"
             android:inputType="numberDecimal"
+            android:paddingBottom="16dp"
             android:textColor="?android:attr/textColorPrimaryNoDisable"
-            android:textSize="16sp"
+            android:textColorHint="#5D5F61"
+            android:textSize="18sp"
             android:textStyle="italic" />
 
         <Switch
@@ -95,7 +103,10 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="20dp"
-            android:text="75%" />
+            android:contentDescription="Taxa de "
+            android:padding="16dp"
+            android:text="75%"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/btCalcular"
@@ -103,9 +114,11 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
-            android:backgroundTint="?attr/colorSecondary"
+            android:backgroundTint="#AC0B42"
+            android:contentDescription="Calcular se vale mais a pena gasolina ou álcool"
             android:onClick="onClickBtCalcular"
-            android:text="Calcular" />
+            android:text="Calcular"
+            android:textColor="#FFFFFF" />
 
         <TextView
             android:id="@+id/textResultado"
