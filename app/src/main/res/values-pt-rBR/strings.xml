@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gasolina ou Álcool?</string>
+    <string name="resultado">RESULTADO</string>
+    <string name="calcular">Calcular</string>
+    <string name="calcular_se_vale_mais_a_pena_gasolina_ou_lcool">Calcular se vale mais a pena gasolina ou álcool</string>
+    <string name="exemplo_5_50">Exemplo: 5.50</string>
+    <string name="uma_bomba_de_gasolina_ilustrando_o_aplicativo">Uma bomba de gasolina ilustrando o aplicativo</string>
+    <string name="t_tulo_da_aplica_o_gasolina_ou_lcool">Título da aplicação Gasolina ou Álcool</string>
+    <string name="gasolina_ou_lcool">Gasolina ou Álcool?</string>
+    <string name="exemplo_7_30">Exemplo: 7.30</string>
+    <string name="pre_o_da_gasolina">Preço da Gasolina</string>
+    <string name="pre_o_do_lcool">Preço do Álcool</string>
+    <string name="taxa_de">Taxa</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pre_o_do_lcool">Alcohol Price</string>
+    <string name="pre_o_da_gasolina">Gasoline Price</string>
+    <string name="exemplo_7_30">Example: 7.30</string>
+    <string name="gasolina_ou_lcool">Gasoline or Alcohol?</string>
+    <string name="t_tulo_da_aplica_o_gasolina_ou_lcool">Application Title: \"Gasoline or Alcohol\"</string>
+    <string name="uma_bomba_de_gasolina_ilustrando_o_aplicativo">A gasoline pump illustrating the application</string>
+    <string name="exemplo_5_50">Example: 5.50</string>
+    <string name="calcular_se_vale_mais_a_pena_gasolina_ou_lcool">Calculate whether gasoline or alcohol is more cost-effective</string>
+    <string name="calcular">Calculate</string>
+    <string name="resultado">RESULT</string>
+    <string name="app_name">Gasoline or Alcohol?</string>
+    <string name="taxa_de">Tax Rate</string>
+</resources>
