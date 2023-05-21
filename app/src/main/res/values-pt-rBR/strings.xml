@@ -12,4 +12,9 @@
     <string name="pre_o_da_gasolina">Preço da Gasolina</string>
     <string name="pre_o_do_lcool">Preço do Álcool</string>
     <string name="taxa_de">Taxa</string>
+    <string name="alcool">ÁLCOOL</string>
+    <string name="gasolina">GASOLINA</string>
+    <string name="valores_invalidos">Valores inválidos</string>
+    <string name="_75_tax_rate">Taxa de 75%</string>
+    <string name="calculate_the_result">CALCULAR O RESULTADO</string>
 </resources>
